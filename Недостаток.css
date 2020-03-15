@@ -1,0 +1,299 @@
+{
+	border: 1px solid black;
+}
+
+body{
+	background: #F0FFFF;
+	
+}
+
+.one {
+	position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.c {
+	z-index:1;
+	position: relative;
+    margin-top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 108%;
+    border-radius: 15px;
+	
+}
+
+
+
+.two{
+	height: 300px;
+	margin-bottom: 2%;
+	
+}
+
+a { 
+    text-decoration: none; 
+    color: #000;
+    transition: .5s linear;
+   } 
+  
+.a{
+	position: relative;
+  display: block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: #aaa;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  
+}
+
+
+  
+.a:hover::before {
+  animation: animate .5s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    top: calc(50% - 2px);
+    left: -100%;
+    height: 4px;
+    z-index: 1;
+  }
+  
+  50% {
+    top: calc(50% - 2px);
+    left: 0;
+    height: 4px;
+    z-index: 1;
+  }
+  
+  100% {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+  
+}
+
+nav {
+  display: block;
+  width: 660px;
+  margin-top:30px;
+  margin: 0 auto 30px;
+  height:30px;
+  background: #D2F4F6;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 1em 0;
+}
+
+.one > ul  {
+  padding: 1em 0;
+  background: #5F9EA0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.one a {
+  padding: 1em;
+  background: rgba(176, 224, 230, .3);
+  
+ 
+}
+
+.one a:hover {
+  background: #E0FFFF;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.one li {
+  display: inline;
+}
+
+li {
+  margin-right: 10px;
+}
+
+body #menu ul li ul { 
+	
+	display: none; 
+}
+ nav ul li ul > li{
+ 	margin-bottom: 27px;
+ }
+ 
+ 
+ 
+#menu {
+	z-index:2;	
+	
+ 	width: 100%;
+	font-size: 12pt;
+	padding: 0 0 0 30px; 
+} 
+
+#menu ul { 
+	margin: 0px;
+	padding: 0px; 
+} 
+
+#menu li {
+	position: relative; 
+	width: 120px;
+	float: left; /*расположение списка по горизонтали*/ 
+	list-style-type: none; /*удаление маркеров*/ 
+} 
+
+#menu ul li ul { 
+	margin: 0px;
+	position: absolute; 
+	left: -1px; 
+	width: 10em; 
+} 
+
+#menu ul li ul li {
+	top:26px;
+	left: 11px;
+	width: 400px;
+	
+	
+	/*width: 100%;*/ 
+} /* настройка отображения элементов списка в виде блоков */
+ 
+#menu ul li:hover ul {
+	display: block; 
+} 
+
+#menu ul li ul:hover { 
+	display: block; 
+}
+
+
+
+
+#myFooter{
+    padding-top:32px;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: #777;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #282b2d;
+    font-size: 18px;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
+#myFooter .footer-social{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #AFEEEE;
+}
+
+#myFooter .fa{
+    font-size: 36px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 51%;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 43px;
+    text-decoration: none;
+    transition:color 0.2s;
+    
+    
+}
+
+p{
+  font-size: 20px;
+}
+
+.h{
+	width: 350px;
+	float: right;
+	border-radius: 15px;
+}
+font{
+	background: rgba(106, 90, 205,0.3);
+	color: #100125;
+	border-radius: 6px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+.three{
+	z-index:1;
+	margin-top: 20px;
+	border: 2px ridge #B0E0E6;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top:10px;
+	padding-bottom: 920px;
+	height: 300px;
+	width: 690px;
+	margin: 0 auto;
+    border-radius: 15px;
+    background-color: #E0FFFF;
+}
+
+.e{
+	width: 40px;
+	position: relative;
+	top: 9px;
+}
+.i{
+	width: 40px;
+	padding-top:6px; 
+}
+
