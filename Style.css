@@ -133,8 +133,7 @@ body #menu ul li ul {
  
  
 #menu {
-	z-index:2;	
-	
+	z-index:2;
  	width: 100%;
 	font-size: 12pt;
 	padding: 0 0 0 30px; 
@@ -148,8 +147,8 @@ body #menu ul li ul {
 #menu li {
 	position: relative; 
 	width: 120px;
-	float: left; /*расположение списка по горизонтали*/ 
-	list-style-type: none; /*удаление маркеров*/ 
+	float: left; 
+	list-style-type: none; 
 } 
 
 #menu ul li ul { 
@@ -163,10 +162,7 @@ body #menu ul li ul {
 	top:26px;
 	left: 11px;
 	width: 400px;
-	
-	
-	/*width: 100%;*/ 
-} /* настройка отображения элементов списка в виде блоков */
+} 
  
 #menu ul li:hover ul {
 	display: block; 
